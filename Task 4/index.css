@@ -31,7 +31,7 @@
 
 }
 
-.content {
+.main {
     display: flex;
     flex-direction: row;
     flex: auto 1 1;
@@ -39,31 +39,31 @@
     background-color: #edeef0;
 }
 
-.content__nav-bar {
+.navBar {
     display: flex;
     flex-direction: column;
     max-width: 300px;
     margin: 20px;
 }
 
-.content__nav-bar__nav-bar-item {
+.navBar__item {
     padding: 10px;
     color: #507299;
     transition: background-color 0.3s ease-out;
     text-decoration: none;
 }
 
-.content__nav-bar__nav-bar-item:hover {
+.navBar__item:hover {
     background-color:#e1e5eb;
 }
 
-.content__posts-area {
+.postsArea {
     display: flex;
     flex-direction: column;
     margin: 20px;
 }
 
-.content__posts-area__post {
+.postsArea__post {
     max-width: 500px;
     margin-bottom: 20px;
     background-color: white;
@@ -78,32 +78,32 @@
     padding-bottom: 20px;
 }
 
-.content__posts-area__post__title-container {
+.postsArea__post__titleContainer {
     margin-left: 20px;
     margin-right: 20px;
 }
 
-.content__posts-area__post__title-container__title {
+.postsArea__post__titleContainer__title {
     font-weight: bold;
 }
 
-.content__posts-area__post__content-container {
+.postsArea__post__contentContainer {
 
     margin-left: 20px;
     margin-right: 20px;
 
 }
 
-.content__posts-area__post__content-container__text {
+.postsArea__post__contentContainer__text {
     word-wrap: break-word;
 }
 
-.content__posts-area__post__content-container__image {
+.postsArea__post__contentContainer__image {
     max-width: 100%;
     height: auto;
 }
 
-.content__posts-area__post__divider {
+.postsArea__post__divider {
     margin-left:20px;
     margin-right: 20px;
     margin-top: 10px;
@@ -114,12 +114,12 @@
     flex-shrink: 0;
 }
 
-.top-divider {
+.topDivider {
     margin-left: 0;
     margin-right: 0;
 }
 
-.content__posts-area__post__buttons-container {
+.postsArea__post__buttonsContainer {
     display: flex;
     width: auto;
     justify-content: space-between;
@@ -128,7 +128,7 @@
 
 }
 
-.content__posts-area__post__buttons-container__button {
+.postsArea__post__buttonsContainer__button {
     padding: 5px;
     color: #507299;
     transition: background-color 0.3s ease-out;
@@ -137,21 +137,21 @@
 
 }
 
-.content__posts-area__post__buttons-container__button:hover {
+.postsArea__post__buttonsContainer__button:hover {
     background-color:#e1e5eb;
 }
 
-.content__right-bar-container {
+.rightBarContainer {
 
 }
 
-.content__right-bar-container__right-bar {
+.rightBarContainer__rightBar {
     display: flex;
     flex-direction: column;
     position: fixed;
 }
 
-.content__right-bar__info-box {
+.rightBarContainer__rightBar__infoBox {
     width: 200px;
     background-color: white;
     border: 1px solid rgb(192, 192, 192);
@@ -167,22 +167,22 @@
     padding-right: 10px;
 }
 
-.content__right-bar__info-box__header-container {
+.rightBarContainer__rightBar__infoBox__headerContainer {
     display: flex;
     justify-content: center;
 }
 
-.content__right-bar__info-box__header-container__header {
+.rightBarContainer__rightBar__infoBox__headerContainer__header {
     font-weight: bold;
 }
 
-.content__right-bar__info-box__text-container {
+.rightBarContainer__rightBar__infoBox__textContainer {
     background-color: #e1e5eb;
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
-.content__right-bar-placeholder {
+.rightBarPlaceholder {
     width: 200px;
     height: 10px;
 }
@@ -199,11 +199,11 @@
 }
 
 @media (max-width: 900px) {
-    .content {
+    .main {
         flex-direction: column;
     }
 
-    .content__nav-bar {
+    .navBar {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
@@ -211,20 +211,20 @@
         margin-right: auto;
     }
 
-    .content__nav-bar__nav-bar-item {
+    .navBar__item {
         margin-right: 20px;
     }
 
-    .content__posts-area {
+    .postsArea {
         margin-left: auto;
         margin-right: auto;
     }
 
-    .content__right-bar {
+    .rightBar {
         display: none;
     }
 
-    .content__right-bar-placeholder {
+    .rightBarPlaceholder {
         display: none;
     }
 }
