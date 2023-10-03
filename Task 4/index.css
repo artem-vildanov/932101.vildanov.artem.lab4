@@ -98,6 +98,11 @@
     word-wrap: break-word;
 }
 
+.postsArea__post__contentContainer__text::selection {
+    background: rgb(212, 212, 212);
+    color:#507299;
+}
+
 .postsArea__post__contentContainer__image {
     max-width: 100%;
     height: auto;
